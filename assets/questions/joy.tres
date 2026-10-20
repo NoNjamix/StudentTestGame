@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="QuestionData" format=3 uid="uid://dsfuylwu83ua7"]
+
+[ext_resource type="Script" uid="uid://brh5ahw4b770k" path="res://scripts/AnswerData.gd" id="1_7svsp"]
+[ext_resource type="Script" uid="uid://pup4hvidab33" path="res://scripts/QuestionData.gd" id="2_6yfd5"]
+
+[sub_resource type="Resource" id="Resource_ow7k5"]
+script = ExtResource("1_7svsp")
+text = "Понимать, что ты растёшь и уже можешь больше, чем вчера"
+point = "discovery"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_dstcm"]
+script = ExtResource("1_7svsp")
+text = "Чувствовать, что ты выразил что-то важное и это отозвалось"
+point = "artist"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_7p5yn"]
+script = ExtResource("1_7svsp")
+text = "Момент, когда в голове складывается сложная картина"
+point = "scientist"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_kp7ar"]
+script = ExtResource("1_7svsp")
+text = "Момент, когда собранная тобой штука наконец включается"
+point = "engineer"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_wp35l"]
+script = ExtResource("1_7svsp")
+text = "Чувствовать, что тело работает на пределе и ты справляешься"
+point = "sportsman"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_f7pi0"]
+script = ExtResource("1_7svsp")
+text = "Видеть, как команда работает слаженно и всё получается"
+point = "influencer"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[resource]
+script = ExtResource("2_6yfd5")
+question_text = "Что для тебя «кайф» в процессе?"
+answers = Array[ExtResource("1_7svsp")]([SubResource("Resource_ow7k5"), SubResource("Resource_dstcm"), SubResource("Resource_7p5yn"), SubResource("Resource_kp7ar"), SubResource("Resource_wp35l"), SubResource("Resource_f7pi0")])
+metadata/_custom_type_script = "uid://pup4hvidab33"

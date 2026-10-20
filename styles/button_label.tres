@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://b0al540pv1avw"]
+
+[ext_resource type="FontFile" uid="uid://bslehe44v7scg" path="res://assets/als-sector.ttf" id="1_3f5ge"]
+
+[resource]
+font = ExtResource("1_3f5ge")
+font_size = 45
+font_color = Color(0.07058824, 0.101960786, 0.1764706, 1)

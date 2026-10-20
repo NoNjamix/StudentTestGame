@@ -1,0 +1,226 @@
+[gd_scene format=3 uid="uid://c0m7nnm2op4ir"]
+
+[ext_resource type="StyleBox" uid="uid://b5pw3upero6t3" path="res://styles/normal_button.tres" id="1_e34te"]
+[ext_resource type="Script" uid="uid://bx3iquo4pmjkb" path="res://scripts/Info.gd" id="1_gign5"]
+[ext_resource type="FontFile" uid="uid://c51l0tedpr3un" path="res://assets/MAK-bold.otf" id="2_gign5"]
+[ext_resource type="FontFile" uid="uid://bslehe44v7scg" path="res://assets/als-sector.ttf" id="3_n1ldr"]
+[ext_resource type="Texture2D" uid="uid://bevh5f8egki5x" path="res://assets/qr_code_tg.png" id="5_w0hsr"]
+[ext_resource type="Texture2D" uid="uid://c14hwmiuy43g4" path="res://assets/qr_code_about.png" id="6_pn7ul"]
+[ext_resource type="Texture2D" uid="uid://6vk3f0ikvq47" path="res://assets/qr_code_register.png" id="7_y6le1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pn7ul"]
+font = ExtResource("2_gign5")
+font_size = 60
+font_color = Color(0.07058824, 0.101960786, 0.1764706, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_y6le1"]
+font = ExtResource("3_n1ldr")
+font_size = 25
+font_color = Color(0.07058824, 0.101960786, 0.1764706, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8q0a5"]
+font = ExtResource("3_n1ldr")
+font_size = 18
+font_color = Color(0.07058824, 0.101960786, 0.1764706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8q0a5"]
+bg_color = Color(0.9529412, 0.9137255, 0.8666667, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8901961, 0.12156863, 0.12941177, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hes62"]
+bg_color = Color(0.7294118, 0.6627451, 0.58431375, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yol56"]
+bg_color = Color(0.9019608, 0.85882354, 0.80784315, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.8901961, 0.12156863, 0.12941177, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_f38xf"]
+font = ExtResource("3_n1ldr")
+font_size = 45
+font_color = Color(0.07058824, 0.101960786, 0.1764706, 1)
+
+[node name="Info" type="Control" unique_id=692204401 node_paths=PackedStringArray("exit_button")]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gign5")
+exit_button = NodePath("MarginContainer/PanelContainer/MarginContainer/VBoxContainer/Button")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1909757012]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.39215687)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=857877109]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer" unique_id=1813446367]
+custom_minimum_size = Vector2(850, 500)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = ExtResource("1_e34te")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer" unique_id=723000517]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer" unique_id=1389568459]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1229340702]
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 2
+text = "О КОНКУРСЕ"
+label_settings = SubResource("LabelSettings_pn7ul")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label2" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=796640168]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_vertical = 0
+text = "«Студент года» — ежегодный конкурс МГТУ им. Н.Э. Баумана, объединяющий самых активных и инициативных студентов Университета.
+
+Конкурс даёт возможность представить свои достижения и сделать шаг к новым высотам в профессиональном и личном развитии.
+
+Он объединяет тех, кто добивается успехов в науке, инженерии, общественной жизни, творчестве и спорте и вдохновляет других собственным примером."
+label_settings = SubResource("LabelSettings_y6le1")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=902938380]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=2129825287]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=433013876]
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 2
+texture = ExtResource("5_w0hsr")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=991983394]
+custom_maximum_size = Vector2(200, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "канал студенческого совета"
+label_settings = SubResource("LabelSettings_8q0a5")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=753688339]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=945398215]
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 2
+texture = ExtResource("6_pn7ul")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=804333719]
+custom_maximum_size = Vector2(200, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "сайт конкурса"
+label_settings = SubResource("LabelSettings_8q0a5")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1595608331]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=1410726799]
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 2
+texture = ExtResource("7_y6le1")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=615068604]
+custom_maximum_size = Vector2(200, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "регистрация"
+label_settings = SubResource("LabelSettings_8q0a5")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1469052832]
+custom_minimum_size = Vector2(200, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_8q0a5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hes62")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yol56")
+action_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/Button" unique_id=1100834935]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 13
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/Button/MarginContainer" unique_id=829587933]
+layout_mode = 2
+text = "ОК"
+label_settings = SubResource("LabelSettings_f38xf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/Button" to="." method="_on_exit_button_pressed"]

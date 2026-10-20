@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="QuestionData" format=3 uid="uid://j30hli2oal1g"]
+
+[ext_resource type="Script" uid="uid://brh5ahw4b770k" path="res://scripts/AnswerData.gd" id="1_hxc8g"]
+[ext_resource type="Script" uid="uid://pup4hvidab33" path="res://scripts/QuestionData.gd" id="2_6yvj0"]
+
+[sub_resource type="Resource" id="Resource_t1vys"]
+script = ExtResource("1_hxc8g")
+text = "«Движение вверх» / «Легенда №17»"
+point = "sportsman"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_no2cx"]
+script = ExtResource("1_hxc8g")
+text = "«Марсианин» / «Гравитация»"
+point = "engineer"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_byfjc"]
+script = ExtResource("1_hxc8g")
+text = "«Первому игроку приготовиться» / «Гарри Поттер»"
+point = "discovery"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_ghp2l"]
+script = ExtResource("1_hxc8g")
+text = "«Тренер» / «Джой»"
+point = "influencer"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_ndyms"]
+script = ExtResource("1_hxc8g")
+text = "«Игры разума» / «Теория всего»"
+point = "scientist"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_hqku3"]
+script = ExtResource("1_hxc8g")
+text = "«Ла-Ла Ленд» / «Богемская рапсодия»"
+point = "artist"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[resource]
+script = ExtResource("2_6yvj0")
+question_text = "Какой фильм или книга тебе ближе?"
+answers = Array[ExtResource("1_hxc8g")]([SubResource("Resource_t1vys"), SubResource("Resource_no2cx"), SubResource("Resource_byfjc"), SubResource("Resource_ghp2l"), SubResource("Resource_ndyms"), SubResource("Resource_hqku3")])
+metadata/_custom_type_script = "uid://pup4hvidab33"

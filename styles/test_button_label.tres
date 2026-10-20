@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://bc8boj1pwttdt"]
+
+[ext_resource type="FontFile" uid="uid://bslehe44v7scg" path="res://assets/als-sector.ttf" id="1_prtj2"]
+
+[resource]
+font = ExtResource("1_prtj2")
+font_size = 25
+font_color = Color(0.07058824, 0.101960786, 0.1764706, 1)

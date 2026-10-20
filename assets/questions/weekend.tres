@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="QuestionData" format=3 uid="uid://bbm1a6qe1nlsm"]
+
+[ext_resource type="Script" uid="uid://brh5ahw4b770k" path="res://scripts/AnswerData.gd" id="1_yvakc"]
+[ext_resource type="Script" uid="uid://pup4hvidab33" path="res://scripts/QuestionData.gd" id="2_f65ph"]
+
+[sub_resource type="Resource" id="Resource_lpvoh"]
+script = ExtResource("1_yvakc")
+text = "Пойду на пробежку, в зал или на площадку — тело просит движения"
+point = "sportsman"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_at5dv"]
+script = ExtResource("1_yvakc")
+text = "Разберу что-нибудь дома: старый ноут, полку, велик — руки скучают"
+point = "engineer"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_jcd4p"]
+script = ExtResource("1_yvakc")
+text = "Почитаю, посмотрю лекцию, разберусь в теме, которая давно манит"
+point = "scientist"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_uacia"]
+script = ExtResource("1_yvakc")
+text = "Напишу друзьям: «А давайте что-нибудь устроим?»"
+point = "influencer"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_yk7ts"]
+script = ExtResource("1_yvakc")
+text = "Сяду за инструмент, краски, текст или просто включу музыку и уйду в неё"
+point = "artist"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_ajshl"]
+script = ExtResource("1_yvakc")
+text = "Попробую то, что давно хотел, но боялся — наконец-то время есть"
+point = "discovery"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[resource]
+script = ExtResource("2_f65ph")
+question_text = "Выходной. Никто ничего не планировал. Чем ты займёшься?"
+answers = Array[ExtResource("1_yvakc")]([SubResource("Resource_lpvoh"), SubResource("Resource_at5dv"), SubResource("Resource_jcd4p"), SubResource("Resource_uacia"), SubResource("Resource_yk7ts"), SubResource("Resource_ajshl")])
+metadata/_custom_type_script = "uid://pup4hvidab33"

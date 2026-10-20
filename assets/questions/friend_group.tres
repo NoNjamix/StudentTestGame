@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="QuestionData" format=3 uid="uid://b473lptns2b8j"]
+
+[ext_resource type="Script" uid="uid://brh5ahw4b770k" path="res://scripts/AnswerData.gd" id="1_s07sx"]
+[ext_resource type="Script" uid="uid://pup4hvidab33" path="res://scripts/QuestionData.gd" id="2_4g06r"]
+
+[sub_resource type="Resource" id="Resource_wl1a0"]
+script = ExtResource("1_s07sx")
+text = "Тот, кто задаёт глубокие вопросы и спорит"
+point = "scientist"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_jcks4"]
+script = ExtResource("1_s07sx")
+text = "Тот, кто собирает всех и придумывает план"
+point = "influencer"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_occ2u"]
+script = ExtResource("1_s07sx")
+text = "Тот, кто предлагает «а давайте на спор!»"
+point = "sportsman"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_yqx6f"]
+script = ExtResource("1_s07sx")
+text = "Тот, кто пока просто наблюдает, но уже готов включиться"
+point = "discovery"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_k1j81"]
+script = ExtResource("1_s07sx")
+text = "Тот, кто развлекает и создаёт настроение"
+point = "artist"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_4837h"]
+script = ExtResource("1_s07sx")
+text = "Тот, кто чинит гитару, колонку или что-то ещё"
+point = "engineer"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[resource]
+script = ExtResource("2_4g06r")
+question_text = "Ты в компании друзей. Твоя роль:"
+answers = Array[ExtResource("1_s07sx")]([SubResource("Resource_wl1a0"), SubResource("Resource_jcks4"), SubResource("Resource_occ2u"), SubResource("Resource_yqx6f"), SubResource("Resource_k1j81"), SubResource("Resource_4837h")])
+metadata/_custom_type_script = "uid://pup4hvidab33"

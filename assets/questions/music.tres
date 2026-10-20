@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="QuestionData" format=3 uid="uid://cac3cyu7x3137"]
+
+[ext_resource type="Script" uid="uid://brh5ahw4b770k" path="res://scripts/AnswerData.gd" id="1_oint7"]
+[ext_resource type="Script" uid="uid://pup4hvidab33" path="res://scripts/QuestionData.gd" id="2_km654"]
+
+[sub_resource type="Resource" id="Resource_itgwn"]
+script = ExtResource("1_oint7")
+text = "Плейлист «первый курс»"
+point = "discovery"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_pvnr3"]
+script = ExtResource("1_oint7")
+text = "Что-то, что мы потом поставим на мероприятии"
+point = "influencer"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_cva0l"]
+script = ExtResource("1_oint7")
+text = "Что-то мощное и ритмичное"
+point = "sportsman"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_jm865"]
+script = ExtResource("1_oint7")
+text = "Спокойное и атмосферное"
+point = "scientist"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_nxwm4"]
+script = ExtResource("1_oint7")
+text = "Подкаст или лекция"
+point = "engineer"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[sub_resource type="Resource" id="Resource_56q2s"]
+script = ExtResource("1_oint7")
+text = "То, что хочется спеть / станцевать прямо сейчас"
+point = "artist"
+metadata/_custom_type_script = "uid://brh5ahw4b770k"
+
+[resource]
+script = ExtResource("2_km654")
+question_text = "Что играет у тебя в наушниках, когда ты идёшь по коридору?"
+answers = Array[ExtResource("1_oint7")]([SubResource("Resource_itgwn"), SubResource("Resource_pvnr3"), SubResource("Resource_cva0l"), SubResource("Resource_jm865"), SubResource("Resource_nxwm4"), SubResource("Resource_56q2s")])
+metadata/_custom_type_script = "uid://pup4hvidab33"
